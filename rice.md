@@ -9,9 +9,10 @@ systemctl enable gdm.service
 # ext
 ---
 ## pacman
-foliate libreoffice gparted veracrypt cmake qbottorrent loupe main-menu gnome-clock document-view grub-customizer gedit gnome-calculator papers vlc
+foliate gparted veracrypt cmake qbottorrent loupe grub-customizer gnome-calculator papers vlc
+
 ## yay
-vscodium-bin balena-etcher-bin 
+vscodium-bin balena-etcher-bin android-studio
 
 ## flatpak
 obsidian telegram drawio
