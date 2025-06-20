@@ -1,8 +1,12 @@
 # base
 
 ## pacman
+
 ```
-ssh flatpak fastfetch btop neovim gnome-shell gdm network-manager-applet gnome-console gnome-browser-connector gnome-tweaks gnome-control-center
+gnome-shell gdm gnome-console nautilus
+```
+```
+openssh flatpak fastfetch btop neovim go rust nodejs npm
 ```
 
 ## systemctl
@@ -17,13 +21,18 @@ systemctl enable gdm.service
 # adds
 
 ## pacman
+
 ```
-foliate gparted veracrypt cmake qbottorrent loupe grub-customizer gnome-calculator papers vlc
+gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator foliate loupe papers
+```
+
+```
+gparted veracrypt cmake qbittorrent vlc inkscape 
 ```
 ## yay
 
 ```
-vscodium-bin balena-etcher-bin grub-customizer
+vscodium-bin visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun
 ```
 
 ```
@@ -53,4 +62,16 @@ systemctl restart NetworkManager
 
 ```
 git config --global credential.helper store
+```
+
+[starship terminal](https://starship.rs/)
+
+## LST kernel
+install:
+```
+sudo pacman -S linux-lts
+```
+update grub:
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
