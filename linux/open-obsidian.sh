@@ -1,15 +1,15 @@
-#!/bin/bash
+# Install wmctrl to run script correctly
 
-# Проверяем, запущен ли Obsidian
+# Checking if Obsidian is running
 if pgrep -x "obsidian" > /dev/null
 then
-    # Если запущен, переводим фокус на его окно с помощью wmctrl
+    # If running, focus its window using wmctrl
     if wmctrl -a "Obsidian"; then
-        echo "Obsidian уже запущен, окно активировано."
+        echo "Obsidian is already running, window activated."
     else
-        echo "Окно Obsidian не найдено."
+        echo "Obsidian window not found."
     fi
 else
-    # Если не запущен, то запускаем его
+    # If not running, launch it
     flatpak run md.obsidian.Obsidian
 fi

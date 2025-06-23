@@ -50,12 +50,12 @@ obsidian telegram drawio baobab collision
 
 [Amnezia](https://github.com/amnezia-vpn/amnezia-client/releases)
 
-[Баг с подключением на Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
+[Connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
 
 ```
 systemctl restart NetworkManager
 ``` 
-между шагами 1 и 2
+in between steps 1 and 2
 
 
 # plus
