@@ -23,12 +23,23 @@ systemctl enable gdm.service
 ## pacman
 
 ```
-gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator foliate loupe papers
+gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar gnome-contacts foliate loupe papers decibels gnome-software gnome-text-editor gnome-font-viewer collision
 ```
 
 ```
-gparted veracrypt cmake qbittorrent vlc inkscape 
+gparted veracrypt cmake qbittorrent vlc inkscape eartag tree
 ```
+
+loupe - images;
+papers - PDFs;
+foliate - books;
+decibels - music;
+eartag - song tags;
+vls - video;
+snapshot - camera.
+
+[more Gnome apps](https://apps.gnome.org/)
+
 ## yay
 
 ```
