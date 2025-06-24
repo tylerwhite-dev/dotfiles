@@ -57,17 +57,31 @@ obsidian telegram drawio baobab collision
 ```
   
 
-## github
+## Amnezia
 
-[Amnezia](https://github.com/amnezia-vpn/amnezia-client/releases)
+[get release](https://github.com/amnezia-vpn/amnezia-client/releases)
 
-[Connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
+[connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
+
+/etc/NetworkManager/NetworkManager.conf:
+```
+[main]
+dns=none
+```
 
 ```
 systemctl restart NetworkManager
 ``` 
-in between steps 1 and 2
 
+/etc/resolv.conf:
+```
+nameserver 1.1.1.1
+nameserver 1.0.0.1
+```
+
+```
+systemctl restart NetworkManager
+```
 
 # plus
 
