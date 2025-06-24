@@ -27,7 +27,7 @@ gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome
 ```
 
 ```
-gparted veracrypt cmake qbittorrent vlc inkscape eartag tree
+gparted veracrypt cmake qbittorrent vlc inkscape eartag tree nvtop qtcreator qt6-base
 ```
 
 loupe - images;
@@ -38,12 +38,17 @@ eartag - song tags;
 vls - video;
 snapshot - camera.
 
+vulkan drivers for lmstudio (maybe something is unnecessary)
+```
+vulkan-tools mesa-utils vulkan-radeon
+```
+
 [more Gnome apps](https://apps.gnome.org/)
 
 ## yay
 
 ```
-vscodium-bin visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun
+vscodium-bin visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
 ```
 
 ```
