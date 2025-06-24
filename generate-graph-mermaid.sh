@@ -13,7 +13,7 @@ cd "$script_dir" || exit
 echo '```mermaid' >> readme.md
 
 # Записываем заголовок графа в файл
-echo "graph TD;" >> readme.md
+echo "graph LR;" >> readme.md
 echo "    Root[${script_dir}]" >> readme.md
 
 # Рекурсивная функция для обхода директорий
@@ -25,10 +25,11 @@ traverse_directory() {
     for entry in "$dir_path"/*; do
         local entry_name=$(basename "$entry" | sed 's/ /_/g')
         if [ -d "$entry" ]; then
-            echo "    ${parent_id} --> ${entry_name}" >> readme.md
+        
+            echo "    ${parent_id}>${parent_id}] --> ${entry_name}>${entry_name}]" >> readme.md
             traverse_directory "$entry" "$entry_name"
         else
-            echo "    ${parent_id} --> ${entry_name}" >> readme.md
+            echo "    ${parent_id}>${parent_id}] --> ${entry_name}([${entry_name}])" >> readme.md
         fi
     done
 }
