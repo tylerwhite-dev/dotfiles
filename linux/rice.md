@@ -23,15 +23,14 @@ systemctl enable gdm.service
 ## pacman
 
 ```
-gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar gnome-contacts foliate loupe papers decibels gnome-software gnome-text-editor gnome-font-viewer collision
+gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer collision baobab
 ```
 
 ```
-gparted veracrypt cmake qbittorrent vlc inkscape eartag tree nvtop qtcreator qt6-base
+gparted veracrypt cmake qbittorrent vlc inkscape eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker 
 ```
 
 loupe - images;
-papers - PDFs;
 foliate - books;
 decibels - music;
 eartag - song tags;
@@ -41,6 +40,12 @@ snapshot - camera.
 vulkan drivers for lmstudio (maybe something is unnecessary)
 ```
 vulkan-tools mesa-utils vulkan-radeon
+```
+
+after install docker
+```
+sudo usermod -aG docker $USER
+sudo systemctl enable --now docker.service
 ```
 
 [more Gnome apps](https://apps.gnome.org/)
@@ -58,7 +63,7 @@ select needed
 
 ## flatpak
 ```
-obsidian telegram drawio baobab collision
+obsidian telegram drawio
 ```
   
 
