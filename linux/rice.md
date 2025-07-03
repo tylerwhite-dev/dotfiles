@@ -23,7 +23,7 @@ systemctl enable gdm.service
 ## pacman
 
 ```
-gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer collision baobab
+gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer collision baobab git-lfs
 ```
 
 ```
@@ -37,23 +37,13 @@ eartag - song tags;
 vls - video;
 snapshot - camera.
 
-vulkan drivers for lmstudio (maybe something is unnecessary)
-```
-vulkan-tools mesa-utils vulkan-radeon
-```
-
-after install docker
-```
-sudo usermod -aG docker $USER
-sudo systemctl enable --now docker.service
-```
 
 [more Gnome apps](https://apps.gnome.org/)
 
 ## yay
 
 ```
-vscodium-bin visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
+visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
 ```
 
 ```
@@ -65,7 +55,35 @@ select needed
 ```
 obsidian telegram drawio
 ```
-  
+
+
+# plus
+
+```
+git config --global credential.helper store
+```
+
+## lmstudio
+vulkan drivers for lmstudio (maybe something is unnecessary)
+```
+vulkan-tools mesa-utils vulkan-radeon
+```
+
+## docker
+after install docker
+```
+sudo usermod -aG docker $USER
+sudo systemctl enable --now docker.service
+```
+then reboot
+
+## git-lfs
+install git-lfs && go to repository
+```
+git lfs install
+git lfs fetch
+git lfs checkout
+```
 
 ## Amnezia
 
@@ -93,11 +111,8 @@ nameserver 1.0.0.1
 systemctl restart NetworkManager
 ```
 
-# plus
 
-```
-git config --global credential.helper store
-```
+
 
 [starship terminal](https://starship.rs/)
 
