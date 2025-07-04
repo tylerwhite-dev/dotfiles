@@ -11,7 +11,7 @@ openssh flatpak fastfetch btop neovim go rust nodejs npm
 
 ## systemctl
 ```
-systemctl start sshd.service && systemctl enable sshd.service
+sudo systemctl enable --now sshd.service
 ```
 
 ```
