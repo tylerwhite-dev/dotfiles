@@ -40,16 +40,21 @@ snapshot - camera.
 
 [more Gnome apps](https://apps.gnome.org/)
 
+### fonts
+```
+ttf-jetbrains-mono-nerd ttf-hack-nerd
+```
+or
+```
+nerd-fonts 
+```
+to select needed
+
 ## yay
 
 ```
 visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
 ```
-
-```
-nerd-fonts 
-```
-select needed
 
 ## flatpak
 ```
