@@ -6,7 +6,7 @@
 gnome-shell gdm gnome-console nautilus
 ```
 ```
-openssh flatpak fastfetch btop neovim go rust nodejs npm
+openssh btop nano
 ```
 
 ## systemctl
@@ -23,11 +23,11 @@ systemctl enable gdm.service
 ## pacman
 
 ```
-gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer collision baobab git-lfs
+gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer collision baobab
 ```
 
 ```
-gparted veracrypt cmake qbittorrent vlc inkscape eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker 
+flatpak starship telegram-desktop obsidian neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker drawio git-lfs
 ```
 
 loupe - images;
@@ -39,6 +39,11 @@ snapshot - camera.
 
 
 [more Gnome apps](https://apps.gnome.org/)
+
+### starship (pacman installed)
+```
+eval "$(starship init bash)"
+```
 
 ### fonts
 ```
@@ -54,11 +59,6 @@ to select needed
 
 ```
 visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
-```
-
-## flatpak
-```
-obsidian telegram drawio
 ```
 
 
@@ -116,10 +116,6 @@ nameserver 1.0.0.1
 systemctl restart NetworkManager
 ```
 
-
-
-
-[starship terminal](https://starship.rs/)
 
 ## LST kernel
 install:
