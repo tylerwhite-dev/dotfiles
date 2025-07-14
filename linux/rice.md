@@ -27,7 +27,7 @@ gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome
 ```
 
 ```
-flatpak starship telegram-desktop obsidian neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker drawio git-lfs
+flatpak starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker drawio-desktop-bin git-lfs
 ```
 
 loupe - images;
@@ -61,6 +61,10 @@ to select needed
 visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
 ```
 
+## flatpak
+```
+obsidian
+```
 
 # plus
 
