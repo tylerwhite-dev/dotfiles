@@ -1,0 +1,9 @@
+# This is the configuration file for Ghostty.
+
+theme = Afterglow
+font-family = Jetbrains Mono
+font-size = 14
+window-padding-x = 6
+window-padding-y = 6
+window-width = 120
+window-height = 36
