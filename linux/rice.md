@@ -127,7 +127,7 @@ systemctl restart NetworkManager
 ## lts kernel
 install:
 ```
-sudo pacman -S linux-lts
+sudo pacman -S linux-lts linux-lts-headers
 ```
 update grub:
 ```
