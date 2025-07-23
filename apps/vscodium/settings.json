@@ -1,0 +1,14 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "none",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "JetBrainsMono NF",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "scm.graph.pageSize": 75,
+    "scm.inputFontSize": 14,
+    "git.replaceTagsWhenPull": true
+}
