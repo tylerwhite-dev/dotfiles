@@ -68,7 +68,7 @@ to select needed
 ## yay
 
 ```
-visual-studio-code-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bun lmstudio
+vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio
 ```
 
 ### lmstudio
