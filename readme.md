@@ -1,6 +1,11 @@
 ```mermaid
 graph LR;
     Root[.]
+    Root>Root] --> apps>apps]
+    apps>apps] --> ghostty>ghostty]
+    ghostty>ghostty] --> config([config])
+    apps>apps] --> vscodium>vscodium]
+    vscodium>vscodium] --> settings.json([settings.json])
     Root>Root] --> generate-graph-mermaid.sh([generate-graph-mermaid.sh])
     Root>Root] --> linux>linux]
     linux>linux] --> open-obsidian.sh([open-obsidian.sh])
