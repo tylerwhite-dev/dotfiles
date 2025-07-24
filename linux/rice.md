@@ -84,8 +84,14 @@ obsidian
 
 # plus
 
+## Save passwords in git
 ```
 git config --global credential.helper store
+```
+
+## Gnome fractional scaling
+```
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 ```
 
 
