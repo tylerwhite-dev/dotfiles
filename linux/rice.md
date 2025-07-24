@@ -91,7 +91,8 @@ git config --global credential.helper store
 
 ## Gnome fractional scaling
 ```
-gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
+
 ```
 
 
