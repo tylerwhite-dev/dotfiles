@@ -17,7 +17,7 @@ sudo systemctl enable --now sshd.service
 
 ## gdm
 ```
-systemctl enable gdm.service
+sudo systemctl enable gdm.service
 ```  
 
 # adds
@@ -31,8 +31,18 @@ gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome
 
 ### apps
 ```
-flatpak starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker drawio-desktop-bin git-lfs 
+flatpak starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs 
 ```
+
+### fonts
+```
+ttf-jetbrains-mono-nerd ttf-hack-nerd
+```
+or
+```
+nerd-fonts 
+```
+to select needed
 
 loupe - images;
 foliate - books;
@@ -40,7 +50,6 @@ decibels - music;
 eartag - song tags;
 vlc - video;
 snapshot - camera.
-
 
 ### starship (installed via pacman)
 ```
@@ -55,20 +64,11 @@ sudo systemctl enable --now docker.service
 ```
 then reboot
 
-### fonts
-```
-ttf-jetbrains-mono-nerd ttf-hack-nerd
-```
-or
-```
-nerd-fonts 
-```
-to select needed
 
 ## yay
 
 ```
-vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio
+vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin
 ```
 
 ### lmstudio
