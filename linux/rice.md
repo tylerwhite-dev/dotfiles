@@ -84,24 +84,10 @@ obsidian
 
 # plus
 
-## Save passwords in git
-```
-git config --global credential.helper store
-```
-
 ## Gnome fractional scaling
 ```
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
 
-```
-
-
-## git-lfs
-install git-lfs && go to repository
-```
-git lfs install
-git lfs fetch
-git lfs checkout
 ```
 
 ## Amnezia
