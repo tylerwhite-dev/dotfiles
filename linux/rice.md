@@ -31,7 +31,7 @@ gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome
 
 ### apps
 ```
-flatpak starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift
+flatpak starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
 ```
 
 ### fonts
