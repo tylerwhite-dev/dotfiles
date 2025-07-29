@@ -1,14 +1,23 @@
 {
     "files.autoSave": "afterDelay",
+    
     "workbench.startupEditor": "none",
-    "git.confirmSync": false,
-    "git.autofetch": true,
+
     "editor.fontSize": 14,
-    "editor.fontFamily": "JetBrainsMono NF", // TODO: multiplatform font configugation
+    "editor.fontFamily": "'JetBrainsMono NF', 'JetBrains Mono'", 
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "monospace",
+    // <=>
+
     "diffEditor.ignoreTrimWhitespace": false,
+    
     "scm.graph.pageSize": 75,
     "scm.inputFontSize": 14,
-    "git.replaceTagsWhenPull": true
+    
+    "git.autofetch": true,
+    "git.replaceTagsWhenPull": true,
+    "git.confirmSync": false,
+
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.1
 }
