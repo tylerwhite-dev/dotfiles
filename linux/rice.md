@@ -68,7 +68,7 @@ then reboot
 ## yay
 
 ```
-vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin
+vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin amneziavpn-bin
 ```
 
 ### lmstudio
@@ -87,33 +87,44 @@ obsidian
 ## Gnome fractional scaling
 ```
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
-
 ```
 
 ## Amnezia
 
-[get release](https://github.com/amnezia-vpn/amnezia-client/releases)
+install via AUR or get [release on github](https://github.com/amnezia-vpn/amnezia-client/releases)
 
 [connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
 
-/etc/NetworkManager/NetworkManager.conf:
+go to:
+```
+sudo nano /etc/NetworkManager/NetworkManager.conf
+```
+
+write:
 ```
 [main]
 dns=none
 ```
 
+restart NetworkManager
 ```
-systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ``` 
 
-/etc/resolv.conf:
+go to:
+```
+sudo nano /etc/resolv.conf
+```
+
+write:
 ```
 nameserver 1.1.1.1
 nameserver 1.0.0.1
 ```
 
+restart NetworkManager
 ```
-systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 
