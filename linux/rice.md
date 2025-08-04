@@ -71,6 +71,11 @@ then reboot
 vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin amneziavpn-bin
 ```
 
+#### gnome extensions
+```
+gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners-reborn
+```
+
 ### lmstudio
 vulkan drivers for lmstudio (maybe something is unnecessary)
 ```
