@@ -1,10 +1,15 @@
 # packages
 
+## full no confirm update
+```
+sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
+```
+
 ## apps
 
-### pacman 
+### pacman
 ```
-openssh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
+openssh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape foliate eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
 ```
 
 ### yay
@@ -13,7 +18,7 @@ vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio only
 ```
 
 ### flatpak
-``` flatpak
+```
 obsidian extensionManager
 ```
 
@@ -25,6 +30,7 @@ or
 ```
 nerd-fonts 
 ```
+
 to select needed
 
 
@@ -45,11 +51,11 @@ eval "$(starship init bash)"
 ```
 
 ## docker
-after install docker
 ```
 sudo usermod -aG docker $USER
 sudo systemctl enable --now docker.service
 ```
+
 reboot system
 
 
@@ -103,6 +109,7 @@ install:
 ```
 sudo pacman -S linux-lts linux-lts-headers
 ```
+
 update grub:
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -129,12 +136,12 @@ sudo gpasswd -a $USER lp
 ```
 
 
-# ui
+# gui
 
 ## gnome
 
-``` pacman
-gnome-shell gdm gnome-console nautilus
+```
+sudo pacman -S gnome-shell gdm gnome-console nautilus
 ```
 
 ### gdm
@@ -144,12 +151,11 @@ sudo systemctl enable gdm.service
 
 ### apps
 
-``` pacman
-gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer baobab snapshot gcolor3
+```
+sudo pacman -S gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar loupe decibels gnome-text-editor gnome-font-viewer baobab snapshot gcolor3
 ```
 
 loupe - images;
-foliate - books;
 decibels - music;
 eartag - song tags;
 vlc - video;
@@ -157,7 +163,7 @@ snapshot - camera.
 
 ### extensions
 ```
-gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners-reborn
+yay -S gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners-reborn
 ```
 
 ### shell settings
@@ -173,8 +179,8 @@ gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
 ```
 
 ### theme for qt apps
-``` pacman
-qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
+```
+sudo pacman -S qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
 ```
 
 go to: .[$SHELL]_profile
@@ -191,21 +197,21 @@ set theme in kvantum
 set theme "kvantum" in qt6ct
 
 ### theme for legacy gtk apps
-``` pacman
-adw-gtk-theme
+```
+sudo pacman -S adw-gtk-theme
 ```
 
-Light theme:
+light theme:
 ```
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3' && gsettings set org.gnome.desktop.interface color-scheme 'default'
 ```
 
-Dark theme:
+dark theme:
 ```
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 ```
 
-Revert to default:
+revert to default:
 ```
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita' && gsettings set org.gnome.desktop.interface color-scheme 'default'
 ```
