@@ -162,8 +162,14 @@ gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners
 
 ### shell settings
 ```
+# enable experimental scaling features
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
+
+# center new windows on the screen
 gsettings set org.gnome.mutter center-new-windows true
+
+# smart focus behavior for new windows
+gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
 ```
 
 ### theme for qt apps
