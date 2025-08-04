@@ -1,40 +1,23 @@
-# base
+# packages
 
-## pacman
+## apps
 
+### pacman 
 ```
-gnome-shell gdm gnome-console nautilus
-```
-
-```
-openssh btop nano
+openssh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
 ```
 
-## ssh
+### yay
 ```
-sudo systemctl enable --now sshd.service
-```
-
-## gdm
-```
-sudo systemctl enable gdm.service
-```  
-
-# adds
-
-## pacman
-
-### gnome stuff
-```
-gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer baobab snapshot
+vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin amneziavpn-bin
 ```
 
-### apps
-```
-flatpak starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape gcolor3 eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
+### flatpak
+``` flatpak
+obsidian extensionManager
 ```
 
-### fonts
+## fonts
 ```
 ttf-jetbrains-mono-nerd ttf-hack-nerd
 ```
@@ -44,59 +27,36 @@ nerd-fonts
 ```
 to select needed
 
-loupe - images;
-foliate - books;
-decibels - music;
-eartag - song tags;
-vlc - video;
-snapshot - camera.
 
-### starship (installed via pacman)
+# configurations
+
+## ssh
+```
+sudo systemctl enable --now sshd.service
+```
+
+## starship
+
+go to: .[$SHELL]rc
+
+write:
 ```
 eval "$(starship init bash)"
 ```
 
-### docker
+## docker
 after install docker
 ```
 sudo usermod -aG docker $USER
 sudo systemctl enable --now docker.service
 ```
-then reboot
+reboot system
 
 
-## yay
-
-```
-vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin amneziavpn-bin
-```
-
-#### gnome extensions
-```
-gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners-reborn
-```
-
-### lmstudio
+## lmstudio
 vulkan drivers for lmstudio (maybe something is unnecessary)
 ```
 vulkan-tools mesa-utils vulkan-radeon
-```
-
-## flatpak
-```
-obsidian extensionManager
-```
-
-# plus
-
-## gnome shell fractional scaling
-```
-gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
-```
-
-## gnome shell settings
-```
-gsettings set org.gnome.mutter center-new-windows true
 ```
 
 ## amnezia
@@ -149,26 +109,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 
-### theme qt in gtk
-```
-qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
-```
-
-go to: .[$SHELL]_profile
-
-write:
-```
-export QT_QPA_PLATFORMTHEME=qt6ct
-```
-
-relogin
-
-set theme in kvantum
-
-set theme "kvantum" in qt6ct
-
-
-
 ## printers
 
 ```
@@ -187,3 +127,60 @@ sudo systemctl enable --now cups.service
 ```
 sudo gpasswd -a $USER lp
 ```
+
+
+# ui
+
+## gnome
+
+``` pacman
+gnome-shell gdm gnome-console nautilus
+```
+
+### gdm
+```
+sudo systemctl enable gdm.service
+```  
+
+### apps
+
+``` pacman
+gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar foliate loupe decibels gnome-text-editor gnome-font-viewer baobab snapshot gcolor3
+```
+
+loupe - images;
+foliate - books;
+decibels - music;
+eartag - song tags;
+vlc - video;
+snapshot - camera.
+
+### extensions
+```
+gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners-reborn
+```
+
+### shell settings
+```
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
+gsettings set org.gnome.mutter center-new-windows true
+```
+
+### theme for qt apps
+```
+qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
+```
+
+go to: .[$SHELL]_profile
+
+write:
+```
+export QT_QPA_PLATFORMTHEME=qt6ct
+```
+
+relogin
+
+set theme in kvantum
+
+set theme "kvantum" in qt6ct
+
