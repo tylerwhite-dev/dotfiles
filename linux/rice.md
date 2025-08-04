@@ -167,7 +167,7 @@ gsettings set org.gnome.mutter center-new-windows true
 ```
 
 ### theme for qt apps
-```
+``` pacman
 qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
 ```
 
@@ -184,3 +184,22 @@ set theme in kvantum
 
 set theme "kvantum" in qt6ct
 
+### theme for legacy gtk apps
+``` pacman
+adw-gtk-theme
+```
+
+Light theme:
+```
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3' && gsettings set org.gnome.desktop.interface color-scheme 'default'
+```
+
+Dark theme:
+```
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+```
+
+Revert to default:
+```
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita' && gsettings set org.gnome.desktop.interface color-scheme 'default'
+```
