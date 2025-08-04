@@ -9,7 +9,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
 
 ### pacman
 ```
-openssh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape foliate eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
+openssh zsh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape foliate eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
 ```
 
 ### yay
@@ -39,6 +39,11 @@ to select needed
 ## ssh
 ```
 sudo systemctl enable --now sshd.service
+```
+
+## zsh
+```
+chsh -s $(which zsh)    # make ZSH default shell
 ```
 
 ## starship
