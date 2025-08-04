@@ -43,11 +43,15 @@ sudo systemctl enable --now sshd.service
 
 ## starship
 
-go to: .[$SHELL]rc
+go to: ~/.[shell]rc file
 
 write:
 ```
-eval "$(starship init bash)"
+eval "$(starship init bash)"    # for bash
+```
+
+```
+eval "$(starship init zsh)"     # for zsh
 ```
 
 ## docker
