@@ -84,17 +84,17 @@ vulkan-tools mesa-utils vulkan-radeon
 
 ## flatpak
 ```
-obsidian
+obsidian extensionManager
 ```
 
 # plus
 
-## Gnome fractional scaling
+## gnome fractional scaling
 ```
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
 ```
 
-## Amnezia
+## amnezia
 
 install via AUR or get [release on github](https://github.com/amnezia-vpn/amnezia-client/releases)
 
@@ -142,6 +142,27 @@ update grub:
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+
+### theme qt in gtk
+```
+qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
+```
+
+go to: .[$SHELL]_profile
+
+write:
+```
+export QT_QPA_PLATFORMTHEME=qt6ct
+```
+
+relogin
+
+set theme in kvantum
+
+set theme "kvantum" in qt6ct
+
+
 
 ## printers
 
