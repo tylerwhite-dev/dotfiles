@@ -89,9 +89,14 @@ obsidian extensionManager
 
 # plus
 
-## gnome fractional scaling
+## gnome shell fractional scaling
 ```
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
+```
+
+## gnome shell settings
+```
+gsettings set org.gnome.mutter center-new-windows true
 ```
 
 ## amnezia
