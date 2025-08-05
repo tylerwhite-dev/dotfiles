@@ -15,6 +15,8 @@ graph LR;
     multiplatform>multiplatform] --> git>git]
     git>git] --> configurations.md([configurations.md])
     git>git] --> ssh_keys_guide.md([ssh_keys_guide.md])
+    multiplatform>multiplatform] --> zsh>zsh]
+    zsh>zsh] --> *([*])
     Root>Root] --> readme.md([readme.md])
     Root>Root] --> script.sh([script.sh])
 ```

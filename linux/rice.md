@@ -46,6 +46,14 @@ sudo systemctl enable --now sshd.service
 chsh -s $(which zsh)    # make ZSH default shell
 ```
 
+install plugins
+```
+zsh-autosuggestions zsh-syntax-highlighting
+```
+
+add installation path to `~/.zshrc`
+
+
 ## starship
 
 go to: `~/.[shell]rc` file
