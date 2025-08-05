@@ -9,7 +9,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
 
 ### pacman
 ```
-openssh zsh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc inkscape foliate eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift wl-clipboard
+openssh zsh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc vlc-plugins-all inkscape foliate eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift cronie wl-clipboard
 ```
 
 ### yay
@@ -48,7 +48,7 @@ chsh -s $(which zsh)    # make ZSH default shell
 
 ## starship
 
-go to: ~/.[shell]rc file
+go to: `~/.[shell]rc` file
 
 write:
 ```
@@ -57,6 +57,12 @@ eval "$(starship init bash)"    # for bash
 
 ```
 eval "$(starship init zsh)"     # for zsh
+```
+
+## timeshift
+if scheduled snapshots not working
+```
+sudo systemctl enable --now cronie.service
 ```
 
 ## docker
@@ -80,10 +86,7 @@ install via AUR or get [release on github](https://github.com/amnezia-vpn/amnezi
 
 [connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
 
-go to:
-```
-sudo nano /etc/NetworkManager/NetworkManager.conf
-```
+go to: `/etc/NetworkManager/NetworkManager.conf`
 
 write:
 ```
@@ -96,10 +99,8 @@ restart NetworkManager
 sudo systemctl restart NetworkManager
 ``` 
 
-go to:
-```
-sudo nano /etc/resolv.conf
-```
+go to: `/etc/resolv.conf`
+
 
 write:
 ```
@@ -192,7 +193,7 @@ gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
 sudo pacman -S qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
 ```
 
-go to: .[$SHELL]_profile
+go to: `~/.bash_profile` file
 
 write:
 ```
