@@ -90,31 +90,18 @@ vulkan-tools mesa-utils vulkan-radeon
 
 ## amnezia
 
-install via AUR or get [release on github](https://github.com/amnezia-vpn/amnezia-client/releases)
+install via AUR or get [from github](https://github.com/amnezia-vpn/amnezia-client/releases)
 
-[connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2090598218)
+[connection bug Arch](https://github.com/amnezia-vpn/amnezia-client/issues/792#issuecomment-2508097498)
 
-go to: `/etc/NetworkManager/NetworkManager.conf`
-
-write:
 ```
-[main]
-dns=none
+sudo systemctl enable systemd-resolved.service && sudo systemctl start systemd-resolved.service
 ```
 
-restart NetworkManager
 ```
-sudo systemctl restart NetworkManager
-``` 
-
-go to: `/etc/resolv.conf`
-
-
-write:
+sudo ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
-nameserver 1.1.1.1
-nameserver 1.0.0.1
-```
+
 
 restart NetworkManager
 ```
