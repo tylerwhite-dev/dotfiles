@@ -1,0 +1,17 @@
+# APPEND COMMON ZSHRC   #
+#       LINUX           #
+
+# enable homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# enable starship prompt
+eval "$(starship init zsh)"
+
+# enable plugins
+
+# installed via pacman 
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# installed via brew
+source /home/linuxbrew/.linuxbrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/linuxbrew/.linuxbrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
