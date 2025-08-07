@@ -6,9 +6,9 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## base
+## casks
 ```
-ghostty telegram obsidian google-chrome betterdisplay transmission qbittorrent starship btop macmon neovim fastfetch balenaetcher steam iina mos playcover-community utm veracrypt macfuse tree appcleaner yt-dlp zsh-autosuggestions logi-options+ amneziavpn
+ghostty telegram obsidian google-chrome betterdisplay transmission qbittorrent macmon balenaetcher steam iina mos playcover-community utm veracrypt macfuse appcleaner logi-options+ amneziavpn
 ```
 
 ## fonts
@@ -16,9 +16,12 @@ ghostty telegram obsidian google-chrome betterdisplay transmission qbittorrent s
 font-jetbrains-mono font-hack-nerd-font
 ```
 
+## utilities
+utilities (multiplatform/brew/formulae.md)
+
 ## developer
 ```
-visual-studio-code vscodium docker-desktop virtualbox android-studio --cask wireshark lm-studio qt-creator qt cmake go rust nvm tmux
+visual-studio-code vscodium docker-desktop virtualbox android-studio lm-studio qt-creator qt go
 ```
 
 ## Configurations
@@ -28,11 +31,4 @@ visual-studio-code vscodium docker-desktop virtualbox android-studio --cask wire
 add to file ~/.zshrc
 ```
 eval "$(starship init bash)"
-```
-
-### zsh-autosuggestions
-
-To file ~/.zshrc
-```
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```

@@ -2,14 +2,14 @@
 
 ## full no confirm update
 ```
-sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
+sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && brew update && brew upgrade
 ```
 
 ## apps
 
 ### pacman
 ```
-openssh zsh flatpak btop nano starship telegram-desktop neovim go rust nodejs npm gparted veracrypt cmake qbittorrent vlc vlc-plugins-all inkscape foliate eartag tree nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker git-lfs timeshift cronie wl-clipboard
+flatpak openssh zsh telegram-desktop go gparted veracrypt qbittorrent vlc vlc-plugins-all inkscape foliate eartag nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
 ```
 
 ### yay
@@ -21,6 +21,9 @@ vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio only
 ```
 obsidian extensionManager
 ```
+
+### brew
+check `multiplatform/brew/formulae.md` to see what to install with homebrew
 
 ## fonts
 ```
@@ -46,7 +49,7 @@ sudo systemctl enable --now sshd.service
 chsh -s $(which zsh)    # make ZSH default shell
 ```
 
-install plugins
+install plugins (pacman, homebrew, etc...):
 ```
 zsh-autosuggestions zsh-syntax-highlighting
 ```
@@ -55,8 +58,7 @@ add installation path to `~/.zshrc`
 
 
 ## starship
-
-go to: `~/.[shell]rc` file
+go to: `~/.zshrc` file (or other rc file associated with your shell)
 
 write:
 ```
@@ -101,7 +103,6 @@ sudo systemctl enable systemd-resolved.service && sudo systemctl start systemd-r
 ```
 sudo ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
-
 
 restart NetworkManager
 ```
