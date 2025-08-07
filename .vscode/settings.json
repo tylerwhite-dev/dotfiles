@@ -18,7 +18,8 @@
 
     "git.autofetch": true,
     "git.replaceTagsWhenPull": true,
-    "git.suggestSmartCommit": false,
+    "git.suggestSmartCommit": true,
+    "git.enableSmartCommit": true,
     "git.confirmSync": false,
 
     "diffEditor.ignoreTrimWhitespace": false,
