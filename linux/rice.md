@@ -9,7 +9,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && bre
 
 ### pacman
 ```
-flatpak openssh zsh telegram-desktop go gparted veracrypt qbittorrent vlc vlc-plugins-all inkscape foliate eartag nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
+flatpak firefox openssh zsh go gparted veracrypt qbittorrent vlc vlc-plugins-all inkscape foliate eartag nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
 ```
 
 ### yay
@@ -19,7 +19,7 @@ vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio only
 
 ### flatpak
 ```
-obsidian extensionManager
+telegram obsidian extensionManager
 ```
 
 ### brew
@@ -46,7 +46,7 @@ sudo systemctl enable --now sshd.service
 
 ## zsh
 ```
-chsh -s $(which zsh)    # make ZSH default shell
+chsh -s $(which zsh)                        # make ZSH default shell
 ```
 
 install plugins (pacman, homebrew, etc...):
@@ -62,11 +62,11 @@ go to: `~/.zshrc` file (or other rc file associated with your shell)
 
 write:
 ```
-eval "$(starship init bash)"    # for bash
+eval "$(starship init bash)"                # for bash
 ```
 
 ```
-eval "$(starship init zsh)"     # for zsh
+eval "$(starship init zsh)"                 # for zsh
 ```
 
 ## timeshift
