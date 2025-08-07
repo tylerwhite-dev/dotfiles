@@ -10,5 +10,5 @@ zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree gi
 
 ## developer
 ```
-rustup nodejs npm neovim cmake
+go rustup nodejs npm neovim cmake
 ```

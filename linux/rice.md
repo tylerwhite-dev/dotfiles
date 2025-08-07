@@ -9,7 +9,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && bre
 
 ### pacman
 ```
-flatpak firefox openssh zsh go gparted veracrypt qbittorrent vlc vlc-plugins-all inkscape foliate eartag nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
+flatpak firefox openssh zsh gparted veracrypt qbittorrent vlc vlc-plugins-all inkscape foliate eartag nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
 ```
 
 ### yay
@@ -24,6 +24,17 @@ telegram obsidian extensionManager
 
 ### brew
 check `multiplatform/brew/formulae.md` to see what to install with homebrew
+
+if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
+
+go to: `/etc/environment`
+
+write:
+```
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/linuxbrew/.linuxbrew/bin"
+```
+
+reboot
 
 ## fonts
 ```
