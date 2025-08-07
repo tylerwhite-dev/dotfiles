@@ -20,4 +20,10 @@
     "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.lineHeight": 1.1,
+    "todo-tree.filtering.includeHiddenFiles": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules",
+        "**/.git"
+    ],
 }
