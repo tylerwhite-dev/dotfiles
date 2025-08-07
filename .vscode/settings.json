@@ -1,25 +1,31 @@
 {
+    "window.zoomLevel": 1,
+
     "files.autoSave": "afterDelay",
     
     "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Visual Studio Dark",
 
+    "editor.minimap.showSlider": "always",
     "editor.fontSize": 14,
     "editor.fontFamily": "'JetBrainsMono NF', 'JetBrains Mono'", 
     "editor.fontLigatures": true,
     // <=>
 
-    "diffEditor.ignoreTrimWhitespace": false,
-    
-    "scm.graph.pageSize": 75,
-    "scm.inputFontSize": 14,
-    
-    "git.autofetch": true,
-    "git.replaceTagsWhenPull": true,
-    "git.confirmSync": false,
-
     "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.lineHeight": 1.1,
+
+    "git.autofetch": true,
+    "git.replaceTagsWhenPull": true,
+    "git.suggestSmartCommit": false,
+    "git.confirmSync": false,
+
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "scm.graph.pageSize": 75,
+    "scm.inputFontSize": 14,
+
     "todo-tree.filtering.includeHiddenFiles": true,
     "todo-tree.tree.showCountsInTree": true,
     "todo-tree.filtering.excludeGlobs": [
