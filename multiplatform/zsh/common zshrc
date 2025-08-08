@@ -12,3 +12,7 @@ setopt APPEND_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
+
+# by-word autosuggest accept
+ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=(forward-word)
+bindkey '^[[1;5C' forward-word
