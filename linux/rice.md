@@ -9,17 +9,17 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && bre
 
 ### pacman
 ```
-flatpak firefox openssh zsh gparted veracrypt qbittorrent vlc vlc-plugins-all inkscape foliate eartag nvtop qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
+flatpak firefox openssh zsh gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag qtcreator qt6-base virtualbox virtualbox-host-dkms docker timeshift cronie wl-clipboard
 ```
 
 ### yay
 ```
-vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio onlyoffice-bin lmstudio drawio-desktop-bin amneziavpn-bin
+vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio lmstudio amneziavpn-bin
 ```
 
 ### flatpak
 ```
-telegram obsidian extensionManager
+telegram obsidian onlyoffice drawio qbittorrent extensionManager 
 ```
 
 ### brew

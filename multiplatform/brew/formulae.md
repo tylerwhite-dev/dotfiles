@@ -5,7 +5,7 @@
 
 ## utils
 ```
-zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp
+zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 ```
 
 ## developer
