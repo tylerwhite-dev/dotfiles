@@ -60,7 +60,7 @@ sudo systemctl enable --now sshd.service
 chsh -s $(which zsh)                        # make ZSH default shell
 ```
 
-install plugins (pacman, homebrew, etc...):
+install plugins (pacman, homebrew, etc...) (contains in `.zshrc linux`):
 ```
 zsh-autosuggestions zsh-syntax-highlighting
 ```
@@ -68,16 +68,11 @@ zsh-autosuggestions zsh-syntax-highlighting
 add installation path to `~/.zshrc`
 
 
-## starship
+## starship (contains in `.zshrc linux`)
 go to: `~/.zshrc` file (or other rc file associated with your shell)
 
-write:
 ```
-eval "$(starship init bash)"                # for bash
-```
-
-```
-eval "$(starship init zsh)"                 # for zsh
+eval "$(starship init zsh)"
 ```
 
 ## timeshift
