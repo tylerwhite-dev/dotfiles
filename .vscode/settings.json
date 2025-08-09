@@ -1,4 +1,5 @@
 {
+    // default window scale
     // "window.zoomLevel": 1,
 
     "files.autoSave": "afterDelay",

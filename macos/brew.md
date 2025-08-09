@@ -26,9 +26,9 @@ visual-studio-code vscodium docker-desktop virtualbox android-studio lm-studio q
 
 ## Configurations
 
-### Starship
+### Starship 
 
-add to file ~/.zshrc
+add to file ~/.zshrc (contained in `.zshrc macos`)
 ```
 eval "$(starship init bash)"
 ```

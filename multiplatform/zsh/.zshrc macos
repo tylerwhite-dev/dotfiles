@@ -3,8 +3,10 @@
 
 # enable homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # enable starship prompt
 eval "$(starship init zsh)"
 
+# enable plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

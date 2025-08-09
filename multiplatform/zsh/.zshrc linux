@@ -3,6 +3,7 @@
 
 # enable homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # enable starship prompt
 eval "$(starship init zsh)"
 

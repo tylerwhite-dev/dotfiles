@@ -60,16 +60,16 @@ sudo systemctl enable --now sshd.service
 chsh -s $(which zsh)                        # make ZSH default shell
 ```
 
-install plugins (pacman, homebrew, etc...) (contains in `.zshrc linux`):
+install plugins (pacman, homebrew, etc...):
 ```
 zsh-autosuggestions zsh-syntax-highlighting
 ```
 
-add installation path to `~/.zshrc`
+add installation path to `~/.zshrc` (contained in `.zshrc linux`)
 
 
-## starship (contains in `.zshrc linux`)
-go to: `~/.zshrc` file (or other rc file associated with your shell)
+## starship (contained in `.zshrc linux`)
+go to: `~/.zshrc` file
 
 ```
 eval "$(starship init zsh)"
@@ -153,7 +153,7 @@ sudo gpasswd -a $USER lp
 ## gnome
 
 ```
-sudo pacman -S gnome-shell gdm gnome-console nautilus
+sudo pacman -S gnome-shell gdm gnome-console
 ```
 
 ### gdm
@@ -164,7 +164,7 @@ sudo systemctl enable gdm.service
 ### apps
 
 ```
-sudo pacman -S gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar loupe decibels gnome-text-editor gnome-font-viewer baobab snapshot gcolor3
+sudo pacman -S nautilus gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar loupe decibels gnome-text-editor gnome-font-viewer baobab snapshot gcolor3
 ```
 
 loupe - images;
