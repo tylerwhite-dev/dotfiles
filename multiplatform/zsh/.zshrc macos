@@ -10,3 +10,31 @@ eval "$(starship init zsh)"
 # enable plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# nvm (official way)
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# npm (lazy nvm load, prefered)
+export NVM_DIR="$HOME/.nvm"
+lazynvm() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+}
+nvm() {
+  lazynvm
+  nvm "$@"
+}
+node() {
+  lazynvm
+  node "$@"
+}
+npm() {
+  lazynvm
+  npm "$@"
+}
+npx() {
+  lazynvm
+  npx "$@"
+}
