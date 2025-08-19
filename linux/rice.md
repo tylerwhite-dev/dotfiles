@@ -15,7 +15,7 @@ flatpak firefox openssh zsh gparted veracrypt vlc vlc-plugins-all inkscape folia
 
 ### yay
 ```
-vscodium-bin balena-etcher-bin grub-customizer google-chrome android-studio lmstudio amneziavpn-bin
+vscodium-bin google-chrome lmstudio amneziavpn-bin
 ```
 
 ### flatpak
