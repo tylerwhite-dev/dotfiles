@@ -11,7 +11,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && bre
 ```
 flatpak firefox openssh zsh gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift cronie wl-clipboard fwupd 
 
-qtcreator qt6-base docker
+qtcreator qt6-base docker rustup
 ```
 
 ### yay
@@ -69,10 +69,14 @@ install plugins (pacman, homebrew, etc...):
 zsh-autosuggestions zsh-syntax-highlighting
 ```
 
-add installation path to `~/.zshrc` (contained in `.zshrc linux`)
+
+add installation path to `~/.zshrc`
+( some path contained in [`zshrc linux`](../multiplatform/zsh/zshrc%20linux) )
 
 
-## starship (contained in `.zshrc linux`)
+## starship 
+( contained in [`zshrc linux`](../multiplatform/zsh/zshrc%20linux) )
+
 go to: `~/.zshrc` file
 
 ```
@@ -88,6 +92,17 @@ sudo systemctl enable --now cronie.service
 ## fwupd
 ```
 sudo systemctl status fwupd.service
+```
+
+## rustup
+```
+rustup install stable
+
+rustup default stable
+
+rustc -V
+cargo -V
+rustup show
 ```
 
 ## docker

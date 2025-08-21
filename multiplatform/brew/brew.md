@@ -1,14 +1,16 @@
-## install homebrew:
+# installation
+
+[website](https://brew.sh)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## utils
+# formulae
 ```
 zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 ```
 
-## developer
+# developer
 ```
-go rustup neovim cmake nvm
+neovim cmake nvm go
 ```

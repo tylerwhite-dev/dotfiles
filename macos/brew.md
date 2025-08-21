@@ -1,14 +1,10 @@
 ## installation
 
-[website](https://brew.sh)
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+[brew](/multiplatform/brew/brew.md#installation)
 
 ## casks
 ```
-ghostty telegram obsidian google-chrome betterdisplay transmission qbittorrent macmon balenaetcher steam iina mos playcover-community utm veracrypt macfuse appcleaner logi-options+ amneziavpn
+ghostty telegram obsidian google-chrome betterdisplay transmission qbittorrent macmon balenaetcher steam iina mos playcover-community utm veracrypt macfuse appcleaner logi-options+ amneziavpn lm-studio
 ```
 
 ## fonts
@@ -17,18 +13,30 @@ font-jetbrains-mono font-hack-nerd-font
 ```
 
 ## utilities
-utilities (multiplatform/brew/formulae.md)
+[formulae](/multiplatform/brew/brew.md#formulae)
 
 ## developer
 ```
-visual-studio-code vscodium docker-desktop virtualbox android-studio lm-studio qt-creator qt go
+visual-studio-code vscodium docker-desktop virtualbox android-studio qt-creator qt rustup
 ```
 
-## Configurations
+## configurations
 
-### Starship 
+### starship
+( contained in [`zshrc macos`](../multiplatform/zsh/zshrc%20macos) )
 
 add to file ~/.zshrc (contained in `.zshrc macos`)
 ```
 eval "$(starship init bash)"
+```
+
+### rustup
+```
+rustup install stable
+
+rustup default stable
+
+rustc -V
+cargo -V
+rustup show
 ```
