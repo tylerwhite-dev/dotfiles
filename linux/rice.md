@@ -27,7 +27,7 @@ org.telegram.desktop md.obsidian.Obsidian org.qbittorrent.qBittorrent com.jgraph
 ```
 
 ### brew
-check `multiplatform/brew/formulae.md` to see what to install with homebrew
+check [brew.md](../multiplatform/brew/brew.md) to see what to install with homebrew
 
 if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
 
