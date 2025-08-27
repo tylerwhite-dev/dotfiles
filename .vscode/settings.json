@@ -4,8 +4,10 @@
 
     "files.autoSave": "afterDelay",
     
-    "workbench.startupEditor": "none",
     "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": true,
+    "workbench.tree.indent": 16,
 
     "editor.minimap.showSlider": "always",
     "editor.fontSize": 14,
