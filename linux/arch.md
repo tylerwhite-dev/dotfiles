@@ -4,16 +4,16 @@
 
 ## full no confirm update
 ```
-sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && brew update && brew upgrade
+sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
 ```
 
 ## apps
 
 ### pacman
 ```
-flatpak firefox openssh zsh gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift cronie wl-clipboard fwupd 
+flatpak firefox openssh zsh gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift cronie wl-clipboard fwupd zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 
-qtcreator qt6-base docker rustup
+neovim cmake nvm go qtcreator qt6-base docker rustup
 ```
 
 ### yay
@@ -23,13 +23,23 @@ google-chrome lmstudio amneziavpn-bin
 vscodium-bin
 ```
 
+#### fonts
+```
+ttf-jetbrains-mono-nerd ttf-hack-nerd
+```
+or `nerd-fonts` to select needed
+
+
 ### flatpak
 ```
 org.telegram.desktop md.obsidian.Obsidian org.qbittorrent.qBittorrent com.jgraph.drawio.desktop org.onlyoffice.desktopeditors be.alexandervanhee.gradia
 ```
 
 ### brew
-check [brew.md](../multiplatform/brew/brew.md) to see what to install with homebrew
+update packages
+```
+brew update && brew upgrade
+```
 
 if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
 
@@ -41,17 +51,6 @@ PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/linuxbr
 ```
 
 reboot
-
-## fonts
-```
-ttf-jetbrains-mono-nerd ttf-hack-nerd
-```
-or
-```
-nerd-fonts 
-```
-
-to select needed
 
 
 # configurations
@@ -66,10 +65,7 @@ sudo systemctl enable --now sshd.service
 chsh -s $(which zsh)                        # make ZSH default shell
 ```
 
-install plugins (pacman, homebrew, etc...):
-```
-zsh-autosuggestions zsh-syntax-highlighting
-```
+install plugins (pacman, homebrew, etc...)
 
 
 add installation path to `~/.zshrc`
