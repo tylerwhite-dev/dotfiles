@@ -96,6 +96,20 @@ sudo systemctl enable --now cronie.service
 sudo systemctl status fwupd.service
 ```
 
+## nvm
+
+follow commands after installation (create symlinks)
+
+```
+nvm install --lts
+
+nvm use node --lts
+
+nvm --version     
+node -v
+npm -v
+```
+
 ## rustup
 ```
 rustup install stable
