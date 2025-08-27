@@ -1,3 +1,5 @@
+# I use arch btw
+
 # packages
 
 ## full no confirm update
