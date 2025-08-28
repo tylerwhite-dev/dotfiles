@@ -29,6 +29,9 @@ sudo systemctl enable gdm.service
 ```
 
 ### apps
+```
+nautilus gnome-browser-connector gnome-tweaks gnome-control-center gnome-calculator gnome-calendar loupe gnome-text-editor gnome-font-viewer baobab snapshot gcolor3
+```
 
 ### configurations
 
