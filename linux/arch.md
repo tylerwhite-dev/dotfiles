@@ -55,76 +55,12 @@ reboot
 
 # configurations
 
-## ssh
-```
-sudo systemctl enable --now sshd.service
-```
-
-## zsh
-```
-chsh -s $(which zsh)                        # make ZSH default shell
-```
-
-install plugins (pacman, homebrew, etc...)
-
-
-add installation path to `~/.zshrc`
-( some path contained in [`zshrc linux`](../multiplatform/zsh/zshrc%20linux) )
-
-
-## starship 
-( contained in [`zshrc linux`](../multiplatform/zsh/zshrc%20linux) )
-
-go to: `~/.zshrc` file
-
-```
-eval "$(starship init zsh)"
-```
-
-## timeshift
-if scheduled snapshots not working
-```
-sudo systemctl enable --now cronie.service
-```
+some configurations contained in [`configurations file`](configurations.md)
 
 ## fwupd
 ```
 sudo systemctl status fwupd.service
 ```
-
-## nvm
-
-follow commands after installation (create symlinks)
-
-```
-nvm install --lts
-
-nvm use node --lts
-
-nvm --version     
-node -v
-npm -v
-```
-
-## rustup
-```
-rustup install stable
-
-rustup default stable
-
-rustc -V
-cargo -V
-rustup show
-```
-
-## docker
-```
-sudo usermod -aG docker $USER
-sudo systemctl enable --now docker.service
-```
-
-reboot system
-
 
 ## lmstudio
 vulkan drivers for lmstudio (maybe something is unnecessary)
@@ -214,19 +150,13 @@ snapshot - camera.
 yay -S gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-corners-reborn
 ```
 
-### shell settings
-```
-# enable experimental scaling features
-gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'xwayland-native-scaling']"
+### configurations
 
-# center new windows on the screen
-gsettings set org.gnome.mutter center-new-windows true
 
-# smart focus behavior for new windows
-gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
-```
+some gnome settings contained in [`configurations file`](configurations.md)
 
-### theme for qt apps
+
+#### theme for qt apps
 ```
 sudo pacman -S qt6ct qt5ct kvantum kvantum-theme-libadwaita-git
 ```
@@ -244,7 +174,7 @@ set theme in kvantum
 
 set theme "kvantum" in qt6ct
 
-### theme for legacy gtk apps
+#### theme for legacy gtk apps
 ```
 sudo pacman -S adw-gtk-theme
 ```

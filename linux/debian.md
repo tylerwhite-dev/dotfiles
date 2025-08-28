@@ -11,16 +11,25 @@ cmake clang rustup
 qt6-base-dev qtcreator qt6-declarative-dev qml6-module-qtquick qml6-module-qtquick-controls
 ```
 
+### configurations
+
+some configurations contained in [`configurations file`](configurations.md)
 
 # gui
 
 ## gnome
 
 ```
-sudo pacman -S gnome-shell gdm3 gnome-console
+gnome-shell gdm3 gnome-console
 ```
 
 ### gdm
 ```
 sudo systemctl enable gdm.service
-```  
+```
+
+### apps
+
+### configurations
+
+some gnome configurations contained in [`configurations file`](configurations.md)
