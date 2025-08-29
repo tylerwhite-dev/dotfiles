@@ -19,11 +19,14 @@ some configurations contained in [`configurations file`](configurations.md)
 
 ## gnome
 
+### basic
+
 ```
 gnome-shell gdm3 gnome-console
 ```
 
-### gdm
+enable gdm
+
 ```
 sudo systemctl enable gdm.service
 ```

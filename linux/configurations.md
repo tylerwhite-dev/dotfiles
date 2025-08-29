@@ -14,10 +14,10 @@ install plugins (pacman, homebrew, etc...)
 
 
 add installation path to `~/.zshrc`
-( some path contained in [`zshrc linux`](../multiplatform/zsh/zshrc%20linux) )
+( some path contained in [`zshrc linux`](../crossplatform/zsh/zshrc%20linux) )
 
 ## starship 
-( contained in [`zshrc linux`](../multiplatform/zsh/zshrc%20linux) )
+( contained in [`zshrc linux`](../crossplatform/zsh/zshrc%20linux) )
 
 go to: `~/.zshrc` file
 
