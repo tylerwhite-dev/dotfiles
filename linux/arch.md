@@ -29,28 +29,8 @@ ttf-jetbrains-mono-nerd ttf-hack-nerd
 ```
 or `nerd-fonts` to select needed
 
-
-### flatpak
-```
-org.telegram.desktop md.obsidian.Obsidian org.qbittorrent.qBittorrent com.jgraph.drawio.desktop org.onlyoffice.desktopeditors be.alexandervanhee.gradia
-```
-
 ### brew
-update packages
-```
-brew update && brew upgrade
-```
-
-if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
-
-go to: `/etc/environment`
-
-write:
-```
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/linuxbrew/.linuxbrew/bin"
-```
-
-reboot
+[installation and formulae](brew.md)
 
 
 # configurations
@@ -151,8 +131,6 @@ yay -S gnome-shell-extension-dash-to-panel gnome-shell-extension-rounded-window-
 ```
 
 ### configurations
-
-
 some gnome settings contained in [`configurations file`](configurations.md)
 
 
