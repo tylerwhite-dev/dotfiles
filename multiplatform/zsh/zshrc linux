@@ -1,28 +1,32 @@
 # APPEND COMMON ZSHRC   #
 #       LINUX           #
 
-# enable homebrew
+# <-- homebrew -->
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# enable starship prompt
+# <-- starship -->
 eval "$(starship init zsh)"
 
-# enable plugins
-
+# <-- zsh plugins -->
 # installed via pacman
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# installed via apt
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # installed via brew
 # source /home/linuxbrew/.linuxbrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /home/linuxbrew/.linuxbrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# nvm (official way)
+# <-- nvm -->
+# official way
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# npm (lazy nvm load on request)
+# lazy nvm load on request
 lazynvm() {
   unset -f nvm node npm npx
   export NVM_DIR="$HOME/.nvm"

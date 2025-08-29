@@ -1,12 +1,12 @@
-# have history to
+# enable history
+setopt APPEND_HISTORY
+
+# save history to
 export HISTFILE=~/.zsh_history
 
 # history file size
 export HISTSIZE=1000
 export SAVEHIST=$HISTSIZE
-
-# enable history
-setopt APPEND_HISTORY
 
 # do not save trash commands
 setopt HIST_IGNORE_ALL_DUPS
