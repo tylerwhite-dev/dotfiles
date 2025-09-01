@@ -26,7 +26,7 @@ WARNING: some packages might behave incorrect and prefered to be installed via b
 
 # formulae
 ```
-zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
+zsh-autosuggestions zsh-syntax-highlighting superfile starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 ```
 
 # developer

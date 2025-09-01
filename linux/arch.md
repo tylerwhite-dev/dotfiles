@@ -11,9 +11,11 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
 
 ### pacman
 ```
-flatpak firefox openssh zsh gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift cronie wl-clipboard fwupd zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
+flatpak superfile openssh cronie wl-clipboard fwupd zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 
-neovim cmake nvm go qtcreator qt6-base docker rustup
+firefox  gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
+
+build-essential neovim cmake nvm go qtcreator qt6-base docker rustup
 ```
 
 ### yay
