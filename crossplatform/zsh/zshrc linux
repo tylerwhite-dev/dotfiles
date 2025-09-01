@@ -21,17 +21,26 @@ eval "$(starship init zsh)"
 # source /home/linuxbrew/.linuxbrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # <-- nvm -->
-# official way
+# official way to load
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# lazy nvm load on request
+# lazy nvm load on request installed recommended by script
 lazynvm() {
   unset -f nvm node npm npx
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 }
+
+# lazy nvm load on request installed by brew
+# lazynvm() {
+#   unset -f nvm node npm npx
+#   export NVM_DIR="$HOME/.nvm"
+#   [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"
+# }
+
+# nvm placeholders
 nvm() {
   lazynvm
   nvm "$@"
@@ -48,3 +57,6 @@ npx() {
   lazynvm
   npx "$@"
 }
+
+# <-- rustup -->
+export PATH="/home/linuxbrew/.linuxbrew/opt/rustup/bin:$PATH"
