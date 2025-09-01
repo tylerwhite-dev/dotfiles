@@ -37,6 +37,11 @@ or `nerd-fonts` to select needed
 
 some configurations contained in [`configurations file`](configurations.md)
 
+## ssh
+```
+sudo systemctl enable --now sshd.service
+```
+
 ## fwupd
 ```
 sudo systemctl status fwupd.service

@@ -1,10 +1,5 @@
 # configurations
 
-## ssh
-```
-sudo systemctl enable --now sshd.service
-```
-
 ## zsh
 ```
 chsh -s $(which zsh)                        # make ZSH default shell
@@ -33,14 +28,14 @@ sudo systemctl enable --now cronie.service
 
 ## nvm
 
-follow commands after installation (create symlinks)
+follow commands after installation (symlinks created)
 
 ```
 nvm install --lts
 
 nvm use node --lts
 
-nvm --version     
+nvm --version
 node -v
 npm -v
 ```
