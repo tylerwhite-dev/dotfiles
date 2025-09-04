@@ -13,14 +13,14 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
 ```
 flatpak superfile openssh cronie wl-clipboard fwupd zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 
-firefox  gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
+firefox alacritty gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
 
 build-essential neovim cmake nvm go qtcreator qt6-base docker rustup
 ```
 
 ### yay
 ```
-google-chrome lmstudio amneziavpn-bin
+google-chrome lmstudio amneziavpn-bin balena-etcher (recomend to install after nvm configured)
 
 vscodium-bin
 ```

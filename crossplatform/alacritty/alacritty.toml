@@ -1,0 +1,44 @@
+[font]
+size = 12
+
+[window.dimensions]
+columns = 140
+lines = 38
+
+[cursor.style]
+shape = "Underline"
+blinking = "Always"
+
+[colors]
+
+[colors.primary]
+background = "#161616"  # цвет фона
+foreground = "#d2d4de"  # цвет текста
+
+[colors.normal]
+black   = "#161616"
+red     = "#e27878"
+green   = "#abb773"
+yellow  = "#e2a478"
+blue    = "#84a0c6"
+magenta = "#a093c7"
+cyan    = "#89b8c2"
+white   = "#c6c8d1"
+
+[colors.bright]
+black   = "#5e6796"
+red     = "#ee7b7b"
+green   = "#b2c16a"
+yellow  = "#e09f71"
+blue    = "#91acd1"
+magenta = "#ada0d3"
+cyan    = "#7ec9da"
+white   = "#d2d4de"
+
+[colors.cursor]
+text = "#161821"
+cursor = "#d2d4de"
+
+[colors.selection]
+text = "#d2d4de"
+background = "#6c6f93"
