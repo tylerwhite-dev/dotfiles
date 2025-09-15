@@ -2,7 +2,7 @@
 
 ## apt
 ```
-sudo git curl flatpak ssh zsh gparted vlc inkscape timeshift foliate eartag wl-clipboard starship fastfetch btop nvtop zsh-autosuggestions zsh-syntax-highlighting
+sudo git curl flatpak ssh zsh gparted vlc inkscape timeshift foliate eartag wl-clipboard starship fastfetch btop nvtop zsh-autosuggestions zsh-syntax-highlighting wmctrl
 
 build-essential cmake clang rustup
 
@@ -82,9 +82,4 @@ some gnome configurations contained in [`configurations file`](configurations.md
 ### basic
 ```
 kde-plasma-desktop sddm
-```
-
-delete:
-```
-konqueror plasma-discover zutty
 ```

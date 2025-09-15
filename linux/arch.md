@@ -11,7 +11,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
 
 ### pacman
 ```
-flatpak superfile openssh cronie wl-clipboard fwupd zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
+flatpak superfile openssh cronie wl-clipboard fwupd zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop wmctrl
 
 firefox alacritty gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
 
