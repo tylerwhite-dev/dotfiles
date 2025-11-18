@@ -15,7 +15,7 @@ flatpak superfile openssh cronie wl-clipboard fwupd zsh zsh-autosuggestions zsh-
 
 firefox alacritty gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
 
-build-essential neovim cmake nvm go qtcreator qt6-base docker rustup
+neovim cmake go qtcreator qt6-base docker rustup
 ```
 
 ### yay

@@ -42,8 +42,6 @@ npm -v
 
 ## rustup
 ```
-rustup install stable
-
 rustup default stable
 
 rustc -V
