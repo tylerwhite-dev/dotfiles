@@ -4,7 +4,7 @@
 launch_obsidian() {
     # Try to launch Obsidian as a Flatpak package
     if command -v flatpak &> /dev/null; then
-        flatpak run md.obsidian.Obsidian
+        flatpak run md.obsidian.Obsidian &>/dev/null &
     else
         echo "Obsidian flatpak not found."
     fi
