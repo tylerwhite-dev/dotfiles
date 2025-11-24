@@ -13,16 +13,27 @@ brew update && brew upgrade
 
 if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
 
-go to: `/etc/environment`
+go to: `/etc/profile`
 
 write:
 ```
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/linuxbrew/.linuxbrew/bin"
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
+    export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
 ```
 
-then reboot
+read:
+```
+source /etc/profile
+```
 
-WARNING: some packages might behave incorrect and prefered to be installed via build-in package manager
+check
+```
+echo $PATH
+which brew
+```
+
+WARNING: tested on arch btw, might be different on other distros
 
 # formulae
 ```
