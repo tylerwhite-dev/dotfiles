@@ -2,6 +2,8 @@
     // default window scale
     // "window.zoomLevel": 1,
 
+    "telemetry.telemetryLevel": "off",
+
     "files.autoSave": "afterDelay",
     
     "workbench.colorTheme": "Visual Studio Dark",
