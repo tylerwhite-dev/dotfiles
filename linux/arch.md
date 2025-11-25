@@ -4,14 +4,20 @@
 
 ## full no confirm update
 ```
-sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y
+sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && brew update && brew upgrade
 ```
 
 ## apps
 
 ### pacman
+
+could be installed as brew
 ```
-flatpak superfile openssh cronie wl-clipboard fwupd zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop wmctrl
+superfile zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
+```
+
+```
+flatpak openssh cronie wl-clipboard fwupd wmctrl
 
 firefox alacritty gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
 
