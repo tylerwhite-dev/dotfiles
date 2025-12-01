@@ -1,9 +1,9 @@
 [font]
-size = 12
+size = 10
 
 [window.dimensions]
-columns = 140
-lines = 38
+columns = 120
+lines = 36
 
 [cursor.style]
 shape = "Underline"
@@ -26,7 +26,7 @@ cyan    = "#89b8c2"
 white   = "#c6c8d1"
 
 [colors.bright]
-black   = "#5e6796"
+black   = "#3a3f5c"
 red     = "#ee7b7b"
 green   = "#b2c16a"
 yellow  = "#e09f71"
