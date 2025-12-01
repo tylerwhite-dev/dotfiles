@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install wmctrl to run script correctly
 
 # Function to launch Obsidian
