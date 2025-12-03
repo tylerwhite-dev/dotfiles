@@ -5,6 +5,8 @@ size = 10
 columns = 120
 lines = 36
 
+padding = 10
+
 [cursor.style]
 shape = "Underline"
 blinking = "Always"
