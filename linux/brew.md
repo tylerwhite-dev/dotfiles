@@ -40,7 +40,5 @@ WARNING: tested on arch btw, might be different on other distros
 zsh-autosuggestions zsh-syntax-highlighting superfile starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
 ```
 
-# developer
-```
-neovim cmake nvm go rustup
+neovim cmake nvm go rustup docker
 ```
