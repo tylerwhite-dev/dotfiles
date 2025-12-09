@@ -14,7 +14,7 @@
 
 ## utilities
 ```
-zsh-autosuggestions zsh-syntax-highlighting superfile starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
+zsh-autosuggestions zsh-syntax-highlighting superfile starship tmux fastfetch btop tree git-lfs yt-dlp nvtop stow
 ```
 
 ## developer
