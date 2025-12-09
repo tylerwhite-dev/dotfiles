@@ -2,12 +2,12 @@
 
 ### name
 ```
-git config --global user.name "Tyler"
+git config --global user.name "..."
 ```
 
 ### email
 ```
-git config --global user.email "mail@example.com"
+git config --global user.email "..."
 ```
 
 ## save passwords in git

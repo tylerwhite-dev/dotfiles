@@ -12,6 +12,7 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && bre
 ### pacman
 
 could be installed as brew
+```
 superfile zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop docker
 ```
 

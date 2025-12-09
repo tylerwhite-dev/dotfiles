@@ -1,8 +1,8 @@
 .git
 .gitignore
-
-
-old
+readme.md
 
 .vscode
-readme.md
+content
+zsh-linux
+zsh-mac

@@ -1,7 +1,23 @@
-# APPEND COMMON ZSHRC   #
-#       MACOS           #
+# enable history
+setopt APPEND_HISTORY
 
-# <-- homebrew --> 
+# save history to
+export HISTFILE=~/.zsh_history
+
+# history file size
+export HISTSIZE=1000
+export SAVEHIST=$HISTSIZE
+
+# do not save trash commands
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
+
+# by-word autosuggest accept using ctrl + arrow right
+ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=(forward-word)
+bindkey '^[[1;5C' forward-word
+
+# <-- homebrew -->
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # <-- starship --> 
