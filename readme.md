@@ -1,4 +1,4 @@
-# My dotfiles :)
+# My dotfiles
 
 ## For ZSH config
 
@@ -14,5 +14,5 @@ stow zsh-linux
 
 ## Other configs
 ```
-stow .
+stow <config name>
 ```
