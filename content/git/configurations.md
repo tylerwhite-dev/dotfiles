@@ -22,3 +22,9 @@ git lfs install
 git lfs fetch
 git lfs checkout
 ```
+
+## git submodule
+```
+git submodule init
+git submodule update
+```

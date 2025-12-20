@@ -11,13 +11,9 @@ sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && bre
 
 ### pacman
 
-could be installed as brew
+some could be installed as [brew](brew.md)
 ```
-superfile zsh zsh-autosuggestions zsh-syntax-highlighting starship tmux fastfetch btop tree git-lfs yt-dlp nvtop docker
-```
-
-```
-flatpak openssh cronie wl-clipboard fwupd wmctrl
+flatpak openssh cronie wl-clipboard fwupd wmctrl linux-headers
 
 firefox alacritty gparted veracrypt vlc vlc-plugins-all inkscape foliate eartag virtualbox virtualbox-host-dkms timeshift
 
