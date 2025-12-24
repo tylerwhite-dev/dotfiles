@@ -92,13 +92,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ## printers
 
 ```
-sudo pacman -S cups cups-pdf ghostscript gsfonts hplip system-config-printer print-manager
+sudo pacman -S cups cups-pdf
 ```
-
-```
-yay -S kyocera_universal 
-```
-Dependency conflicts might appear. Delete manually and retry installation
 
 ```
 sudo systemctl enable --now cups.service
