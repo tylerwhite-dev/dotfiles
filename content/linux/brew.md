@@ -5,10 +5,10 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-reboot and update packages
-
+reboot and check
 ```
-brew update && brew upgrade
+echo $PATH
+which brew
 ```
 
 if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
@@ -27,18 +27,12 @@ read:
 source /etc/profile
 ```
 
-check
-```
-echo $PATH
-which brew
-```
-
 WARNING: tested on arch btw, might be different on other distros
 
 # formulae
 ```
 zsh-autosuggestions zsh-syntax-highlighting superfile starship tmux fastfetch btop tree git-lfs yt-dlp nvtop
-```
 
-neovim cmake nvm go rustup
+
+neovim cmake nvm rustup
 ```
