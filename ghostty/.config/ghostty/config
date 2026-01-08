@@ -1,0 +1,13 @@
+theme = 0x96f
+cursor-style = underline
+cursor-style-blink = true
+
+font-family = Jetbrains Mono
+font-size = 14
+
+window-padding-x = 6
+window-width = 120
+window-height = 36
+
+keybind = alt+left=unbind
+keybind = alt+right=unbind
