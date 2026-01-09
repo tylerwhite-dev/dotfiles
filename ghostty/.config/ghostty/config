@@ -1,13 +1,19 @@
+# theme
 theme = 0x96f
-cursor-style = underline
-cursor-style-blink = true
 
+cursor-style = underline
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# font
 font-family = Jetbrains Mono
 font-size = 14
 
+# window preferences
 window-padding-x = 6
 window-width = 120
 window-height = 36
 
+# keys
 keybind = alt+left=unbind
 keybind = alt+right=unbind
