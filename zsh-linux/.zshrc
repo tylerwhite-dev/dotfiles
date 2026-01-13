@@ -13,6 +13,13 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 
+setopt CORRECT
+
+# autosuggest using tab key
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+
 # by-word autosuggest accept using ctrl + arrow right
 ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=(forward-word)
 bindkey '^[[1;5C' forward-word
