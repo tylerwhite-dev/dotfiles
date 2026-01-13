@@ -1,5 +1,5 @@
 # theme
-theme = 0x96f
+theme = Material Darker
 
 cursor-style = underline
 cursor-style-blink = false
@@ -7,7 +7,6 @@ shell-integration-features = no-cursor
 
 # font
 font-family = Jetbrains Mono
-font-size = 14
 
 # window preferences
 window-padding-x = 6
