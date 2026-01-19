@@ -1,0 +1,76 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2026-01-01T00:00:00.000-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "7zip.7zip"
+        },
+        {
+          "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfo.AoiEdition"
+        },
+        {
+          "PackageIdentifier": "VideoLAN.VLC"
+        },
+        {
+          "PackageIdentifier": "TheDocumentFoundation.LibreOffice"
+        },
+        {
+          "PackageIdentifier": "Oracle.VirtualBox"
+        },
+        {
+          "PackageIdentifier": "Google.Chrome"
+        },
+        {
+          "PackageIdentifier": "IDRIX.VeraCrypt"
+        },
+        {
+          "PackageIdentifier": "qBittorrent.qBittorrent"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerShell"
+        },
+        {
+          "PackageIdentifier": "Bitwarden.Bitwarden"
+        },
+        {
+          "PackageIdentifier": "Fastfetch-cli.Fastfetch"
+        },
+        {
+          "PackageIdentifier": "Rufus.Rufus"
+        },
+        {
+          "PackageIdentifier": "Balena.Etcher"
+        },
+        {
+          "PackageIdentifier": "Obsidian.Obsidian"
+        },
+        {
+          "PackageIdentifier": "ElementLabs.LMStudio"
+        },
+        {
+          "PackageIdentifier": "yt-dlp.FFmpeg"
+        },
+        {
+          "PackageIdentifier": "yt-dlp.yt-dlp"
+        },
+        {
+          "PackageIdentifier": "Telegram.TelegramDesktop"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal"
+        },
+        {
+          "PackageIdentifier": "WinDirStat.WinDirStat"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ]
+}
