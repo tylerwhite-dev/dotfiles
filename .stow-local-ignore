@@ -1,12 +1,16 @@
 .git
 .gitignore
+.gitattributes
 readme.md
 .DS_Store
-.gitattributes
 
-.vscode
 content
+.vscode
+
+alacritty
+ghostty
+kitty
+
 zsh-linux
 zsh-mac
 tmux
-alacritty
