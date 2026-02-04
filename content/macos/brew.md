@@ -24,7 +24,7 @@ visual-studio-code vscodium docker-desktop virtualbox android-studio qt-creator 
 
 ## fonts
 ```
-font-jetbrains-mono font-hack-nerd-font
+font-jetbrains-mono font-jetbrains-mono-nerd-font font-hack-nerd-font 
 ```
 
 # configurations
