@@ -3,9 +3,10 @@
     // "window.zoomLevel": 1,
 
     "telemetry.telemetryLevel": "off",
+    "update.mode": "manual",
 
     "files.autoSave": "afterDelay",
-    
+
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": true,
