@@ -3,18 +3,18 @@
   "gutter": { "min_line_number_digits": 0 },
   "title_bar": { "show_sign_in": false },
   "minimap": { "show": "always" },
-  "horizontal_scroll_margin": 1,
-  "vertical_scroll_margin": 1,
-  
+  "horizontal_scroll_margin": 3,
+  "vertical_scroll_margin": 3,
+
   // BEHAVIOR
-  "restore_on_startup": "last_workspace",
+  "restore_on_startup": "launchpad",
   "show_completions_on_input": false,
   "autosave": { "after_delay": { "milliseconds": 1000 } },
   "git": { "inline_blame": { "enabled": false } },
 
   // THEME
   "icon_theme": "Base Charmed Icons",
-  "theme": "macOS Classic Dark",
+  "theme": "VSCode Dark Modern",
 
   // FONT
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -27,4 +27,4 @@
   // CONSTANTS
   "project_panel": { "default_width": 276 },
   "git_panel": { "default_width": 276 },
-  
+}
