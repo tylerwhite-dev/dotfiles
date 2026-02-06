@@ -1,2 +1,63 @@
-Pictures/Wallpapers/** filter=lfs diff=lfs merge=lfs -text
+{
+  // UI
+  "gutter": { "min_line_number_digits": 0 },
+  "title_bar": { "show_sign_in": false },
+  "minimap": { "show": "always" },
+  "horizontal_scroll_margin": 3,
+  "vertical_scroll_margin": 3,
+
+  // BEHAVIOR
+  "restore_on_startup": "launchpad",
+  "show_completions_on_input": false,
+  "autosave": { "after_delay": { "milliseconds": 1000 } },
+  "git": { "inline_blame": { "enabled": false } },
+
+  // THEME
+  "icon_theme": "Base Charmed Icons",
+  "theme": "macOS Classic Dark",
+
+  // FONT
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 15,
+  "buffer_font_size": 13.5,
+  "buffer_line_height": { "custom": 1.6 },
+  "buffer_font_features": { "liga": true },
+  // font is correct if you see ligatures and symbols: <=> 
+
+  // CONSTANTS
+  "project_panel": { "default_width": 276 },
+  "git_panel": { "default_width": 276 },
+}
 content/fonts/** filter=lfs diff=lfs merge=lfs -text
+
+# Images
+*.svg filter=lfs diff=lfs merge=lfs
+
+# Archives
+*.7z filter=lfs diff=lfs merge=lfs
+*.br filter=lfs diff=lfs merge=lfs
+*.gz filter=lfs diff=lfs merge=lfs
+*.tar filter=lfs diff=lfs merge=lfs
+*.zip filter=lfs diff=lfs merge=lfs
+*.rar filter=lfs diff=lfs merge=lfs
+
+# Video
+*.mkv filter=lfs diff=lfs merge=lfs
+*.avi filter=lfs diff=lfs merge=lfs
+*.mov filter=lfs diff=lfs merge=lfs
+*.mp4 filter=lfs diff=lfs merge=lfs
+*.flv filter=lfs diff=lfs merge=lfs
+*.mpg filter=lfs diff=lfs merge=lfs
+*.mpeg filter=lfs diff=lfs merge=lfs
+*.vob filter=lfs diff=lfs merge=lfs
+*.amv filter=lfs diff=lfs merge=lfs
+*.3gp filter=lfs diff=lfs merge=lfs
+
+# Disk images
+*.iso filter=lfs diff=lfs merge=lfs
+*.elf filter=lfs diff=lfs merge=lfs
+
+# Exe
+*.exe filter=lfs diff=lfs merge=lfs
+*.msi filter=lfs diff=lfs merge=lfs
+*.dll filter=lfs diff=lfs merge=lfs

@@ -4,9 +4,6 @@
 readme.md
 .DS_Store
 
-content
-.vscode
-
 alacritty
 ghostty
 kitty
