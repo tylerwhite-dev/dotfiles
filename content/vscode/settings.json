@@ -14,7 +14,7 @@
 
     "editor.minimap.showSlider": "always",
     "editor.fontSize": 14,
-    "editor.fontFamily": "'JetBrainsMono NF'", 
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'", 
     "editor.fontLigatures": true,
     // font is correct if you see ligatures and symbols: <=>  
 
