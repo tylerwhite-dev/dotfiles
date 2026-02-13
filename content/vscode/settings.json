@@ -7,7 +7,6 @@
 
     "files.autoSave": "afterDelay",
 
-    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": true,
     "workbench.tree.indent": 16,
