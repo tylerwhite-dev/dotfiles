@@ -1,0 +1,10 @@
+---
+- name: Check Linuxbrew
+  become: false
+  command: which brew
+  register: brew_check
+  failed_when: false
+  changed_when: false
+- name: Show output
+  debug:
+    msg: "{{ brew_check.stdout }}"

@@ -1,0 +1,16 @@
+---
+- name: Install common packages
+  become: true
+  when: ansible_os_family == "Debian"
+  apt:
+    name:
+      - sudo
+      - git
+      - curl
+      - ssh
+      - zsh
+      - wl-clipboard 
+      - nano
+      - neovim
+      - btop
+    state: present
