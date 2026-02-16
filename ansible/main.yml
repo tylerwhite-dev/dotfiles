@@ -1,10 +1,8 @@
 ---
 - hosts: localhost
   connection: local
+  become: yes
   tasks:
     - import_tasks: modules/common.yml
     - import_tasks: modules/brew.yml
-      
-      
-      
 # ansible-playbook main.yml --ask-become-pass

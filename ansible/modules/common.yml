@@ -9,8 +9,9 @@
       - curl
       - ssh
       - zsh
-      - wl-clipboard 
+      - wl-clipboard
       - nano
       - neovim
       - btop
+      - stow
     state: present

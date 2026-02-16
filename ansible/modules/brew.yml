@@ -1,10 +1,35 @@
 ---
-- name: Check Linuxbrew
-  become: false
-  command: which brew
-  register: brew_check
-  failed_when: false
+- name: Install dependencies (apt)
+  apt:
+    name: [curl, build-essential, procps, file, git]
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Install dependencies (pacman)
+  pacman:
+    name: [curl, base-devel, procps-ng, file, git]
+    state: present
+  when: ansible_distribution == "Archlinux"
+
+- name: Check if Linuxbrew installed
+  command: /home/linuxbrew/.linuxbrew/bin/brew --version
+  register: brew_version_check
+  ignore_errors: yes
   changed_when: false
-- name: Show output
+
+- name: Run Linuxbrew installation script
+  shell: NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  environment:
+    HOMEBREW_NO_ANALYTICS: 1
+    HOMEBREW_NO_AUTO_UPDATE: 1
+  become_user: "{{ lookup('env', 'USER')}}"
+  when: brew_version_check is failed
+
+- name: Check Linuxbrew version
+  command: /home/linuxbrew/.linuxbrew/bin/brew --version
+  register: brew_version
+  changed_when: false
+
+- name: Show Linuxbrew version
   debug:
-    msg: "{{ brew_check.stdout }}"
+    msg: "Linuxbrew version: {{ brew_version.stdout }}"
