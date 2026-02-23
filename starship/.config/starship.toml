@@ -34,8 +34,6 @@ symbol = " "
 symbol = " "
 [c]
 symbol = " "
-[cpp]
-symbol = " "
 [cmake]
 symbol = " "
 [conda]
@@ -56,9 +54,6 @@ symbol = " "
 symbol = " "
 [fennel]
 symbol = " "
-# [fortran] удален, так как вызывает ошибку в вашей версии
-[fortran]
-symbol = " "
 [fossil_branch]
 symbol = " "
 [gcloud]
@@ -159,8 +154,6 @@ symbol = " "
 symbol = " "
 [pijul_channel]
 symbol = " "
-[pixi]
-symbol = "󰏗 "
 [python]
 symbol = " "
 [rlang]
