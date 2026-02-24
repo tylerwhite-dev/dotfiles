@@ -11,7 +11,7 @@ echo $PATH
 which brew
 ```
 
-if brew packages not available from automatic works (hooks for example), add homebrew to SYSTEM environment:
+if you need package under root, add homebrew to system environment:
 
 go to: `/etc/profile`
 
@@ -31,7 +31,7 @@ WARNING: tested on arch btw, might be different on other distros
 
 # formulae
 ```
-zsh-autosuggestions zsh-syntax-highlighting stow yazi superfile starship tmux neovim fastfetch btop tree git-lfs yt-dlp nvtop mailsy taskell imagemagick
+zsh-autosuggestions zsh-syntax-highlighting stow yazi superfile starship tmux neovim fastfetch btop tree git-lfs yt-dlp nvtop mailsy imagemagick
 
 
 cmake nvm rustup uv
