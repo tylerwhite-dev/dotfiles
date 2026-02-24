@@ -17,9 +17,8 @@
     "editor.fontLigatures": true,
     // font is correct if you see ligatures and symbols: <=>  
 
-    "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
 
     "git.autofetch": true,
     "git.replaceTagsWhenPull": true,
