@@ -31,7 +31,7 @@ WARNING: tested on arch btw, might be different on other distros
 
 # formulae
 ```
-zsh-autosuggestions zsh-syntax-highlighting stow yazi superfile starship tmux neovim fastfetch btop tree git-lfs yt-dlp nvtop mailsy imagemagick
+zsh-autosuggestions zsh-syntax-highlighting stow yazi superfile starship tmux neovim fastfetch btop tree git-lfs yt-dlp nvtop mailsy imagemagick qwen-code
 
 
 cmake nvm rustup uv

@@ -14,12 +14,12 @@
 
 ## utilities
 ```
-zsh-autosuggestions zsh-syntax-highlighting superfile starship tmux fastfetch btop tree git-lfs yt-dlp nvtop stow
+zsh-autosuggestions zsh-syntax-highlighting superfile yazi starship tmux fastfetch btop tree git-lfs yt-dlp nvtop stow mailsy imagemagick qwen-code
 ```
 
 ## developer
 ```
-visual-studio-code vscodium docker-desktop virtualbox android-studio qt-creator qt rustup neovim cmake nvm go
+visual-studio-code vscodium docker-desktop virtualbox android-studio qt-creator qt rustup neovim cmake nvm go uv
 ```
 
 ## fonts
