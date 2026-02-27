@@ -25,8 +25,7 @@ ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=(forward-word)
 bindkey '^[[1;5C' forward-word
 
 # <-- homebrew -->
-# uncomment if linuxbrew is not in system path
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # <-- starship -->
 eval "$(starship init zsh)"
