@@ -41,29 +41,35 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # lazy nvm load on request
-lazynvm() {
-  unset -f nvm node npm npx
+__nvmload() {
+  unset -f nvm node npm npx __nvmload
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 }
 
 # nvm placeholders
 nvm() {
-  lazynvm
+__nvmload()
   nvm "$@"
 }
 node() {
-  lazynvm
+__nvmload()
   node "$@"
 }
 npm() {
-  lazynvm
+__nvmload()
   npm "$@"
 }
 npx() {
-  lazynvm
+__nvmload()
   npx "$@"
 }
 
 # <-- rustup -->
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+
+# <-- sdkman -->
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# alias
+alias ll='eza -a --icons --grid --group-directories-first'

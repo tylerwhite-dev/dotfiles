@@ -57,29 +57,44 @@ source /home/linuxbrew/.linuxbrew/opt/zsh-syntax-highlighting/share/zsh-syntax-h
 # }
 
 # lazy nvm load on request installed by brew
-lazynvm() {
-  unset -f nvm node npm npx
+__nvmload() {
+  unset -f nvm node npm npx __nvmload
+
   export NVM_DIR="$HOME/.nvm"
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"
+  
+  local BREW_NVM="/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"
+  
+  if [ -s "$BREW_NVM" ]; then
+    . "$BREW_NVM"
+  else
+    echo "Warning: nvm.sh not found at $BREW_NVM"
+    return 1
+  fi
 }
 
 # nvm placeholders
 nvm() {
-  lazynvm
+  __nvmload
   nvm "$@"
 }
 node() {
-  lazynvm
+  __nvmload
   node "$@"
 }
 npm() {
-  lazynvm
+  __nvmload
   npm "$@"
 }
 npx() {
-  lazynvm
+  __nvmload
   npx "$@"
 }
 
 # <-- rustup -->
 export PATH="/home/linuxbrew/.linuxbrew/opt/rustup/bin:$PATH"
+
+# <-- sdkman -->
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# alias
+alias ll='eza -a --icons --grid --group-directories-first'
