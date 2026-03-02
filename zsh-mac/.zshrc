@@ -73,3 +73,4 @@ export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 # alias
 alias ll='eza -a --icons --grid --group-directories-first'
+alias la='eza -la --icons --grid --group-directories-first'
