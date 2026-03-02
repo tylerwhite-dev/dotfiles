@@ -1,3 +1,7 @@
+# alias
+alias ll='eza -a --icons --grid --group-directories-first'
+alias la='eza -la --icons --grid --group-directories-first'
+
 # enable history
 setopt APPEND_HISTORY
 
@@ -5,7 +9,7 @@ setopt APPEND_HISTORY
 export HISTFILE=~/.zsh_history
 
 # history file size
-export HISTSIZE=1000
+export HISTSIZE=500
 export SAVEHIST=$HISTSIZE
 
 # do not save trash commands
@@ -70,7 +74,3 @@ export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 # <-- sdkman -->
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# alias
-alias ll='eza -a --icons --grid --group-directories-first'
-alias la='eza -la --icons --grid --group-directories-first'

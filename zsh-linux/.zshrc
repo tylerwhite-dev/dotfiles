@@ -1,3 +1,7 @@
+# alias
+alias ll='eza -a --icons --grid --group-directories-first'
+alias la='eza -la --icons --grid --group-directories-first'
+
 # enable history
 setopt APPEND_HISTORY
 
@@ -95,7 +99,3 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/rustup/bin:$PATH"
 
 # <-- sdkman -->
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# alias
-alias ll='eza -a --icons --grid --group-directories-first'
-alias la='eza -la --icons --grid --group-directories-first'
