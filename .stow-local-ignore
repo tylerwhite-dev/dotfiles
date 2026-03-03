@@ -1,8 +1,12 @@
 .git
 .gitignore
 .gitattributes
-readme.md
 .DS_Store
+readme.md
+
+
+ansible
+content
 
 alacritty
 ghostty
@@ -10,4 +14,3 @@ kitty
 
 zsh-linux
 zsh-mac
-tmux
