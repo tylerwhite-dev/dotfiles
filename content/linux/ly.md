@@ -1,5 +1,9 @@
 
-1. Install zig
+1. Install zig and libs
+
+```
+build-essential libpam0g-dev libxcb-xkb-dev xauth xserver-xorg brightnessctl
+```
 
 2. Compile as systemd module
 ```
@@ -13,6 +17,5 @@ sudo systemctl daemon-reload
 sudo systemctl disable --now gdm3  # disable current DM
 sudo systemctl disable getty@tty2.service
 
-sudo systemctl enable ly@tty2.service
-sudo systemctl start ly@tty2.service
+sudo systemctl enable --now ly@tty2.service
 ```
