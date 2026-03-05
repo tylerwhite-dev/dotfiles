@@ -16,7 +16,7 @@ visual-studio-code vscodium docker-desktop virtualbox android-studio
 
 ## utilities
 ```
-zsh-autosuggestions zsh-syntax-highlighting superfile yazi file-formula starship tmux fastfetch btop tree git-lfs yt-dlp nvtop stow mailsy imagemagick qwen-code gromgit/brewtils/taproom zoxide eza 
+zsh-autosuggestions zsh-syntax-highlighting superfile yazi file-formula starship tmux fastfetch btop tree git-lfs yt-dlp nvtop stow mailsy imagemagick qwen-code gromgit/brewtils/taproom zoxide eza pfetch 
 ```
 
 ## developer
