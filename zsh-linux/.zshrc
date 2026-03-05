@@ -99,3 +99,5 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/rustup/bin:$PATH"
 
 # <-- sdkman -->
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+pfetch
