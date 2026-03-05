@@ -74,3 +74,5 @@ export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 # <-- sdkman -->
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+pfetch
