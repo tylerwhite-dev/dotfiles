@@ -1,6 +1,6 @@
 [window.dimensions]
-columns = 120
-lines = 36
+columns = 136
+lines = 40
 
 [window]
 padding = { x = 6 }
