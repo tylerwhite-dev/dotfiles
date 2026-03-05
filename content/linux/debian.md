@@ -4,7 +4,11 @@
 
 some could be installed as [brew](brew.md)
 ```
-sudo git curl flatpak ssh zsh wl-clipboard starship fastfetch btop nvtop zsh-autosuggestions zsh-syntax-highlighting wmctrl git-lfs neovim
+
+
+sudo git git-lfs curl flatpak ssh zsh stow
+
+wl-clipboard wmctrl neovim nala
 
 nautilus gnome-calculator gnome-calendar loupe gnome-text-editor gnome-font-viewer baobab snapshot gcolor3 gparted vlc inkscape timeshift foliate eartag gnome-browser-connector gnome-tweaks gnome-control-center gnome-console
 
