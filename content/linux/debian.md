@@ -6,7 +6,7 @@ some could be installed as [brew](brew.md)
 ```
 
 
-sudo git git-lfs curl flatpak ssh zsh stow
+sudo git git-lfs curl flatpak ssh zsh stow build-essential
 
 wl-clipboard wmctrl neovim nala
 

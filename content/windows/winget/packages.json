@@ -8,9 +8,6 @@
           "PackageIdentifier": "7zip.7zip"
         },
         {
-          "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfo.AoiEdition"
-        },
-        {
           "PackageIdentifier": "VideoLAN.VLC"
         },
         {
@@ -35,9 +32,6 @@
           "PackageIdentifier": "Bitwarden.Bitwarden"
         },
         {
-          "PackageIdentifier": "Fastfetch-cli.Fastfetch"
-        },
-        {
           "PackageIdentifier": "Rufus.Rufus"
         },
         {
@@ -50,12 +44,6 @@
           "PackageIdentifier": "ElementLabs.LMStudio"
         },
         {
-          "PackageIdentifier": "yt-dlp.FFmpeg"
-        },
-        {
-          "PackageIdentifier": "yt-dlp.yt-dlp"
-        },
-        {
           "PackageIdentifier": "Telegram.TelegramDesktop"
         },
         {
@@ -63,6 +51,9 @@
         },
         {
           "PackageIdentifier": "WinDirStat.WinDirStat"
+        },
+        {
+          "PackageIdentifier": "DEVCOM.JetBrainsMonoNerdFont"
         }
       ],
       "SourceDetails": {
