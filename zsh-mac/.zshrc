@@ -21,7 +21,7 @@ setopt CORRECT
 
 # autosuggest using tab key
 autoload -Uz compinit
-compinit
+compinit -C
 zstyle ':completion:*' menu select
 
 # by-word autosuggest accept using ctrl + arrow right

@@ -6,7 +6,7 @@ alias la='eza -la --icons --group-directories-first'
 setopt APPEND_HISTORY
 
 # save history to
-export HISTFILE=~/.zsh_history
+HISTFILE=~/.zsh_history
 
 # history file size
 export HISTSIZE=500
@@ -21,7 +21,7 @@ setopt CORRECT
 
 # autosuggest using tab key
 autoload -Uz compinit
-compinit
+compinit -C
 zstyle ':completion:*' menu select
 
 # by-word autosuggest accept using ctrl + arrow right
@@ -50,7 +50,7 @@ source /home/linuxbrew/.linuxbrew/opt/zsh-syntax-highlighting/share/zsh-syntax-h
 # <-- nvm -->
 # official way to load
 # export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # lazy nvm load on request installed recommended by script
@@ -62,18 +62,10 @@ source /home/linuxbrew/.linuxbrew/opt/zsh-syntax-highlighting/share/zsh-syntax-h
 
 # lazy nvm load on request installed by brew
 __nvmload() {
-  unset -f nvm node npm npx __nvmload
-
+  unset -f nvm node npm npx __nvmload 2>/dev/null
   export NVM_DIR="$HOME/.nvm"
-  
-  local BREW_NVM="/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"
-  
-  if [ -s "$BREW_NVM" ]; then
-    . "$BREW_NVM"
-  else
-    echo "Warning: nvm.sh not found at $BREW_NVM"
-    return 1
-  fi
+  source /home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh 2>/dev/null || \
+    echo "Warning: nvm.sh not found"
 }
 
 # nvm placeholders
