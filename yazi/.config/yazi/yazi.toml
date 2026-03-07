@@ -5,5 +5,5 @@ prepend_rules = [
 
 [opener]
 edit = [
-  { run = 'nvim "$@"', desc = "Neovim" },
+  { run = 'nvim "$@"', block = true, desc = "Neovim" },
 ]
