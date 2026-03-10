@@ -6,7 +6,7 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 
 # font
-font-family = Jetbrains Mono
+font-family = JetBrainsMono Nerd Font
 
 # window preferences
 window-padding-x = 6
