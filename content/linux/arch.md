@@ -4,7 +4,7 @@
 
 ## full no confirm update
 ```
-sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && brew update && brew upgrade
+sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update -y && brew upgrade
 ```
 
 ## apps
