@@ -1,0 +1,29 @@
+with import <nixpkgs> {};
+[
+  btop
+  stow
+  pfetch-rs
+  fastfetch
+  yazi
+  eza 
+  lazygit
+  ffmpeg
+  zoxide
+  imagemagick
+  qwen-code
+  tree 
+  git-lfs 
+  yt-dlp 
+  mailsy 
+  superfile 
+  starship
+  tmux 
+  neovim 
+  zsh-autosuggestions 
+  zsh-syntax-highlighting
+  nvtopPackages.v3d
+  
+  #go
+  #rustup
+  #nodejs
+]
