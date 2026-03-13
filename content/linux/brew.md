@@ -37,7 +37,7 @@ brew tap oven-sh/bun
 ```
 
 ```
-zsh-autosuggestions zsh-syntax-highlighting stow yazi file-formula superfile starship tmux neovim fastfetch btop tree git-lfs yt-dlp nvtop mailsy imagemagick qwen-code gromgit/brewtils/taproom zoxide eza lazygit pfetch-rs ffmpeg
+zsh-autosuggestions zsh-syntax-highlighting stow yazi file-formula superfile starship tmux neovim fastfetch btop tree git-lfs yt-dlp nvtop mailsy imagemagick-full qwen-code gromgit/brewtils/taproom zoxide eza lazygit pfetch-rs ffmpeg
 
 
 cmake nvm rustup uv bun zig
